@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/v1/users/",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/register",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/login",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/logout",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/refresh-token",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/changePassword",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/current-user",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/update-account",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/places/:id",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/places",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/all-location-photos",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/api/v1/users/place/:id",
+      "dest": "src/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/server.js"
+    }
+  ]
+}

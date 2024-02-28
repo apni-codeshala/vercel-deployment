@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input[type="text"],input[type="password"],input[type="email"]{
+    @layer w-full;
+    @apply border my-2 py-2 px-3 rounded-2xl;
+}
+
+button{
+    @layer bg-gray-300;
+}
+
+button.primary{
+    background-color: #F5385D;
+    @layer bg-primary ;
+    @apply p-2 w-auto text-white rounded-2xl;
+}
