@@ -42,7 +42,7 @@ const AccountPage = () => {
       const accessToken = Cookies.get('accessToken');
       console.log(accessToken)
       if (accessToken) {
-        await axios.post(`http://localhost:8000/api/v1/users/logout`, {}, {
+        await axios.post(`https://vercel-server-puce.vercel.app/api/v1/users/logout`, {}, {
           headers: {
             Authorization: `Bearer ${accessToken}`,
           },
