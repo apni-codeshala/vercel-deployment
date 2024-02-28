@@ -17,7 +17,7 @@ const SinglePlacePage = () => {
   useEffect(() => {
     const fetchPlaceData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/v1/users/place/${subPlace}`); // Updated URL
+        const response = await axios.get(`https://vercel-server-puce.vercel.app/api/v1/users/place/${subPlace}`); // Updated URL
         const place = response.data.data;
         console.log(place.data)
         setPlaceData(place);

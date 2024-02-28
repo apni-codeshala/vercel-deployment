@@ -10,7 +10,7 @@ const Index = () => {
     useEffect(() => {
         const fetchAllLocationPhotos = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/v1/users/all-location-photos');
+                const response = await axios.get('https://vercel-server-puce.vercel.app/api/v1/users/all-location-photos');
                 const placesData = response.data.data;
                 setPlaces(placesData);
                 setLoading(false);

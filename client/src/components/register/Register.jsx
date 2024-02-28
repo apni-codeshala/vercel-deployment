@@ -14,7 +14,7 @@ const Register = () => {
   
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/v1/users/register', { // Updated URL
+      const response = await axios.post('https://vercel-server-puce.vercel.app/api/v1/users/register', { // Updated URL
         username,
         fullname,
         email,
